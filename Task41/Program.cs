@@ -39,7 +39,7 @@ int NumbersCounter(int [] array)
     Console.Write($"{counter}");
     return counter;
 }
-int [] result=ArrayCreate("Введите числа через запятую");
+int [] result=ArrayCreate("Введите числа через пробел");
 PrintArray(result);
 NumbersCounter(result);
 
