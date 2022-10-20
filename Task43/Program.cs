@@ -23,7 +23,8 @@ List<int> CreateList(List<int> list)
 
 void FindCoordinates(List<int> list)
 {
- double b1 = list[0];
+    if(list[1]!=list[3])
+ {double b1 = list[0];
  Console.Write($"b1 = {b1}, ");
 
  double k1 = list[1];
@@ -35,11 +36,12 @@ void FindCoordinates(List<int> list)
  double k2 = list[3];
  Console.Write($"k2 = {k2} -> ");
  
- double pointX = (b2 - b1)/(k1 - k2);
- double pointY= k1*pointX + b1;
- 
- Console.Write($"({pointX}; ");
- Console.Write($"{pointY})");
+    double pointX = (b2 - b1)/(k1 - k2);
+    double pointY= k1*pointX + b1;
+    Console.Write($"({pointX}; ");
+    Console.Write($"{pointY})");
+ }
+ else {Console.WriteLine("Введите не одинаковые числа числа");}
 }
 FindCoordinates(CreateList(list));
 
