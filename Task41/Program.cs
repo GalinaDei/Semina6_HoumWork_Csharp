@@ -5,9 +5,9 @@
 */
 int[] ArrayCreate(string message)
 {
-    Console.WriteLine("Введите числа");
+    Console.WriteLine("Введите числа через пробел");
     string text = Console.ReadLine()??"";
-    string[] textArray = text.Split(",");
+    string[] textArray = text.Split(" ");
   int[]numArray = new int[textArray.Length];
     for (int i = 0; i < textArray.Length; i++)
     {
